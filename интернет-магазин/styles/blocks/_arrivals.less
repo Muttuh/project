@@ -1,0 +1,23 @@
+.arrivals {
+    .flex();
+
+    text-transform: uppercase;
+    background-color: #F8F3F4;
+    min-height: 150px;
+}
+.arrivals>h2 {
+    color: @pink;
+    font-size: 24px;
+}
+.arrivals-nav>a {
+    text-decoration: none;
+    color: #636363;
+    font-size: 14px;
+}
+.arrivals-nav>a:not(:last-child)::after {
+    content: " /";
+}
+.arrivals-nav>a:hover,
+.arrivals-nav>a:active {
+    color: @pink;
+}

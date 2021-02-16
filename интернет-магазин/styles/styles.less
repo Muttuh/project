@@ -1,0 +1,77 @@
+@pink: #F16D7F;
+.flex(@justify: space-between, @align: center) {
+    display: flex;
+    align-items: @align;
+    justify-content: @justify;
+}
+.buttonWhite {
+    cursor: pointer;
+    background-color: #fff;
+    color: @pink;
+    border: 1px solid @pink;
+    &:hover,
+    &:active {
+        background-color: @pink;
+        color: #fff;
+        border: none;
+    }
+} 
+.buttonPink {
+    cursor: pointer;
+    background-color: @pink;
+    color: #fff;
+    border: none;
+    &:hover,
+    &:active {
+        .buttonWhite();
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+}
+.wrapper {
+    padding: 0 calc(50% - 1140px / 2);
+}
+
+/*HEADER*/
+@import "blocks/_header.less";
+
+/*PROMO*/
+@import "blocks/_promo.less";
+
+/*OFFERS*/
+@import "blocks/_offers.less";
+
+/*GALLERY*/
+@import "blocks/_products.less";
+
+/*FEATURES*/
+@import "blocks/_features.less";
+
+/*SUBSCRIBE*/
+@import "blocks/_subscribe.less";
+
+/*FOOTER*/
+@import "blocks/_footer.less";
+
+/*ARRIVALS*/
+@import "blocks/_arrivals.less";
+
+/*CATALOG MAIN*/
+@import "blocks/_catalog_main.less";
+
+/*PRODUCT*/
+@import "blocks/_catalog_product.less";
+
+/*CART*/
+@import "blocks/_cart.less";

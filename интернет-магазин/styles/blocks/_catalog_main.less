@@ -1,0 +1,53 @@
+/*CATALOG MAIN-MENU*/
+.catalog-main-menu {
+    width: 100%;
+    min-height: 130px;
+    text-transform: uppercase;
+
+    .flex(flex-start);
+}
+.filter {
+    padding-right: 322px;
+    text-decoration: none;
+    color: black;
+}
+
+.cmm-nav>a {
+    text-decoration: none;
+    color: #6f6e6e;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.cmm-nav>a::after {
+    content: url("img/vector-down.png");
+    margin-left: 10px;
+}
+.cmm-nav>a:hover {
+    color:#EF5B70;
+}
+/*CATALOG MAIN-PAGINATION*/
+.catalog-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalog-main-pagination {
+    width: 284px;
+    height: 45px;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.cmp-a {
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 16px;
+    font-weight: 300;
+    margin-right: 15px;
+}
+.cmp-a-active,
+.cmp-a:hover {
+    color: @pink;
+}
