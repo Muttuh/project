@@ -21,12 +21,17 @@
     text-decoration: none;
     color: #fff;
     margin-bottom: 30px;
+
 }
 .offers-wrapper>a>div {
     min-height: 260px;
     min-width: 360px;
     .flex(center);
     flex-direction: column;    
+    transition: 0.3s;
+}
+.offers-wrapper>a:hover>div {
+    transform: scale(1.05);
 }
 .offers-wrapper>a:last-child:not(:nth-child(2n+1)),
 .offers-wrapper>a:nth-last-child(2):not(:nth-child(2n+1)){

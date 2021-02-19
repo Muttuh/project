@@ -8,23 +8,16 @@
     cursor: pointer;
     background-color: #fff;
     color: @pink;
-    border: 1px solid @pink;
-    &:hover,
-    &:active {
-        background-color: @pink;
-        color: #fff;
-        border: none;
-    }
+    outline: 1px solid @pink;
+    border: none;
+    transition: 0.3s;
 } 
 .buttonPink {
     cursor: pointer;
     background-color: @pink;
     color: #fff;
     border: none;
-    &:hover,
-    &:active {
-        .buttonWhite();
-    }
+    transition: 0.3s;
 }
 
 * {
@@ -36,11 +29,15 @@ body {
     font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 100%;
+    min-height: 100vh;
 }
+
 .wrapper {
     padding: 0 calc(50% - 1140px / 2);
+}
+
+.flex-grow {
+    flex-grow: 1;
 }
 
 /*HEADER*/
@@ -75,3 +72,6 @@ body {
 
 /*CART*/
 @import "blocks/_cart.less";
+
+/*REGISTRATION*/
+@import "blocks/_registration-main.less";
