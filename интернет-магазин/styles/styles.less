@@ -1,9 +1,11 @@
 @pink: #F16D7F;
+
 .flex(@justify: space-between, @align: center) {
     display: flex;
     align-items: @align;
     justify-content: @justify;
 }
+
 .buttonWhite {
     cursor: pointer;
     background-color: #fff;
@@ -11,7 +13,8 @@
     outline: 1px solid @pink;
     border: none;
     transition: 0.3s;
-} 
+}
+
 .buttonPink {
     cursor: pointer;
     background-color: @pink;
@@ -23,6 +26,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     padding: 0;
     margin: 0;
@@ -75,3 +79,11 @@ body {
 
 /*REGISTRATION*/
 @import "blocks/_registration-main.less";
+
+/*@meida (max-width: 790)*/
+@import "blocks/_media790.less";
+
+/*@meida (max-width: 1180)*/
+@import "blocks/_media1180.less";
+
+

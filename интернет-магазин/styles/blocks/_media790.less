@@ -1,0 +1,70 @@
+@media (max-width: 790px) {
+    .header-wrapper {
+        justify-content: space-between;
+        &>div:first-child img {
+            margin: 0 40px 0 0;
+        }
+    }
+
+    .header-wrapper>nav>a {
+        display: none;
+    }
+    .wrapper {
+        padding: 0 15px;
+      }
+    .index-main {
+        background-image: none;
+        background-color: #f1e4e6;
+     }
+    .promoPhoto {
+        display: none;
+     }
+    .promoText {
+        width: 100%;
+        min-height: 365px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+       &>div {
+        font-size: 20px;
+       } 
+       & .brand {
+        font-size: 38px;   
+       }
+    }
+    .offers-wrapper {
+        flex-direction: column;
+        
+        &>a>div {
+            width: 345px;
+            min-height: 250px;
+            margin-bottom: 30px;
+         }
+        
+         &>a>#lower {
+            min-height: 110px;
+            background-size: cover;
+        } 
+    } 
+    
+    .gallery-list {
+        .flex(space-between, center);
+        flex-wrap: no-wrap;
+        flex-direction: column;
+    }
+    .subscribe {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 65px;
+        padding-bottom: 140px;
+
+    }
+    footer {
+        flex-direction: column-reverse;
+        padding: 5px;
+       &>div {
+           margin-top: 40px;
+       } 
+    } 
+   
+}

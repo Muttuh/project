@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Best Shop</title>
@@ -7,19 +8,79 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/39d625aba6.js" crossorigin="anonymous"></script>
+	<script src="script.js" defer></script>
 </head>
+
 <body>
 	<header class="header">
 		<div class="wrapper header-wrapper">
 			<div>
-			<a href="index.html"><img src="img/logo.png" alt="logo"></a>
-			<img src="img/search.png" alt="search">
+				<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+				<img src="img/search.png" alt="search">
+			</div>
+			<nav>
+				<img src="img/header-menu.png" alt="header-menu" class="burgerBtn">
+				<a href="registration.html"><img src="img/account.png" alt="account"></a>
+				<a href="cart.html"><img src="img/cart.png" alt="cart"></a>
+			</nav>
 		</div>
-		<nav>
-			<img src="img/header-menu.png" alt="header-menu">
-			<img src="img/account.png" alt="account">
-			<img src="img/cart.png" alt="cart">
-		</nav>
+
+		<div class="overlay">
+			<div class="burger-menu">
+				<button class="burger-close">
+					<i class="fas fa-times"></i>
+				</button>
+				<h3>
+					menu
+				</h3>
+				<ul class="bureger-menu-list"> <a href="#">man</a>
+					<a href="#">
+						<li>Accessories</li>
+					</a>
+					<a href="#">
+						<li>Bags</li>
+					</a>
+					<a href="#">
+						<li>Denim</li>
+					</a>
+					<a href="#">
+						<li>T-Shirts</li>
+					</a>
+				</ul>
+				<ul class="bureger-menu-list"> women
+					<a href="#">
+						<li>Accessories</li>
+						<a href="#">
+							<li>Jackets & Coats</li>
+						</a>
+						<a href="#">
+							<li>Polos</li>
+						</a>
+						<a href="#">
+							<li>T-Shirts</li>
+						</a>
+						<a href="#">
+							<li>Shirts</li>
+						</a>
+				</ul>
+				<ul class="bureger-menu-list"> kids
+					<a href="#">
+						<li>Accessories</li>
+					</a>
+					<a href="#">
+						<li>Bags</li>
+					</a>
+					<a href="#">
+						<li></li>Denim</li>
+					</a>
+					<a href="#">
+						<li>T-Shirts</li>
+					</a>
+					<a href="#">
+						<li>Bags</li>
+					</a>
+				</ul>
+			</div>
 		</div>
 	</header>
 
@@ -45,77 +106,85 @@
 	</section>
 
 	<div class="wrapper">
-	<section class="product-card">
-		<h2>women collection</h2>
-		<div class="product-card-red-line"></div>
-		<h3>moshino cheap and chic</h3>
-		<p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-		<div class="product-price">$561</div>
-		<div class="product-card-grey-line"></div>
-		<div class="cmm-nav product-cmm-nav">
+		<section class="product-card">
+			<h2>women collection</h2>
+			<div class="product-card-red-line"></div>
+			<h3>moshino cheap and chic</h3>
+			<p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
+				collaborative architectures before cutting-edge services. Completely visualize parallel core
+				competencies rather than exceptional portals.</p>
+			<div class="product-price">$561</div>
+			<div class="product-card-grey-line"></div>
+			<div class="cmm-nav product-cmm-nav">
 				<a href="#">choose color</a>
 				<a href="#">choose size</a>
 				<a href="#">quantity</a>
-		</div>
-		<button class="buy-button">
-			<i class="fas fa-shopping-cart"></i>
-			Add to Cart
-		</button>
-	</section>
+			</div>
+			<button class="buy-button">
+				<i class="fas fa-shopping-cart"></i>
+				Add to Cart
+			</button>
+		</section>
 	</div>
 
 	<section class="wrapper gallery-list product-gallery-list">
-			<div class="gallery">
-				<div class="gallery-picture">
-					<img src="img/gallery4.jpg" alt="img/gallery4.jpg">
-					<div class="back">
-						<a href="#"><div>
+		<div class="gallery">
+			<div class="gallery-picture">
+				<img src="img/gallery4.jpg" alt="img/gallery4.jpg">
+				<div class="back">
+					<a href="#">
+						<div>
 							<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
 							<span>Add to Cart</span>
-						</div></a>
-					</div>
-				</div>
-				<div class="gallery-text"><h3>ELLERY X M'O CAPSULE</h3>
-					<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-					<p>$52.00</p>
+						</div>
+					</a>
 				</div>
 			</div>
-			<div class="gallery">
-				<div class="gallery-picture">
-					<img src="img/gallery3.jpg" alt="img/gallery3.jpg">
-					<div class="back">
-						<a href="#">
-							<div>
-								<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
-								<span>Add to Cart</span>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="gallery-text">
-					<h3>ELLERY X M'O CAPSULE</h3>
-					<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-					<p>$52.00</p>
+			<div class="gallery-text">
+				<h3>ELLERY X M'O CAPSULE</h3>
+				<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
+					up with Moda Operandi.</p>
+				<p>$52.00</p>
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="gallery-picture">
+				<img src="img/gallery3.jpg" alt="img/gallery3.jpg">
+				<div class="back">
+					<a href="#">
+						<div>
+							<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
+							<span>Add to Cart</span>
+						</div>
+					</a>
 				</div>
 			</div>
-			<div class="gallery">
-				<div class="gallery-picture">
-					<img src="img/gallery6.jpg" alt="img/gallery6.jpg">
-					<div class="back">
-						<a href="#">
-							<div>
-								<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
-								<span>Add to Cart</span>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="gallery-text">
-					<h3>ELLERY X M'O CAPSULE</h3>
-					<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-					<p>$52.00</p>
+			<div class="gallery-text">
+				<h3>ELLERY X M'O CAPSULE</h3>
+				<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
+					up with Moda Operandi.</p>
+				<p>$52.00</p>
+			</div>
+		</div>
+		<div class="gallery">
+			<div class="gallery-picture">
+				<img src="img/gallery6.jpg" alt="img/gallery6.jpg">
+				<div class="back">
+					<a href="#">
+						<div>
+							<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
+							<span>Add to Cart</span>
+						</div>
+					</a>
 				</div>
 			</div>
+			<div class="gallery-text">
+				<h3>ELLERY X M'O CAPSULE</h3>
+				<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
+					up with Moda Operandi.</p>
+				<p>$52.00</p>
+			</div>
+		</div>
 	</section>
 
 	<section class="wrapper subscribe">
@@ -142,4 +211,5 @@
 		</div>
 	</footer>
 </body>
+
 </html>

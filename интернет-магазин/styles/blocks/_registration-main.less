@@ -3,89 +3,98 @@
     padding-top: 64px;
     padding-bottom: 96px;
 }
+
 .registration-form {
     width: 31%;
     .flex(space-between, flex-start);
     flex-direction: column;
 
-   & h3 {
-       font-size: 16px;
-       line-height: 19px;
-       font-weight: 300;
-       text-transform: uppercase;
-       color: #222;
-       margin-bottom: 0;
-   }
+    & h3 {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #222;
+        margin-bottom: 0;
+    }
 
-   & p {
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 16px;
-    color: #b1b1b1;
-   }
-   
-   & input {
-       color: #a4a4a4;
-       font-size: 13px;
-       font-weight: 300;
-       line-height: 16px;
-       border: 1px solid #a4a4a4;
-       
-       padding: 16px;
-       margin-top: 20px;
-       width: 360px;
-       box-shadow: none;
-   
-      &[placeholder] {
-          color: #b1b1b1;
-      } 
-   }
-   & .registration-radio {
-       .flex(flex-start);
-       width: 100%;
-       & input {
-           width: 40px;
-       }
-       & div {
-           margin-top: 20px;
-       }
-   }
-   & .form-submit {
-       .flex(space-evenly);
-       .buttonPink();
-       font-size: 14px;
-       text-transform: uppercase;
-       padding: 16px 0;
-       min-width: 40%;
-       margin-top: 39px;
+    & p {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #b1b1b1;
+    }
 
-      & fas {
-          color: white;
-         
-      }
-      &:hover,
-      &:active {
-          .buttonWhite();
-      }
-   }  
+    & input {
+        color: #a4a4a4;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        border: 1px solid #a4a4a4;
+
+        padding: 16px;
+        margin-top: 20px;
+        width: 360px;
+        box-shadow: none;
+
+        &[placeholder] {
+            color: #b1b1b1;
+        }
+    }
+
+    & .registration-radio {
+        .flex(flex-start);
+        width: 100%;
+
+        & input {
+            width: 40px;
+        }
+
+        & div {
+            margin-top: 20px;
+        }
+    }
+
+    & .form-submit {
+        .flex(space-evenly);
+        .buttonPink();
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 16px 0;
+        min-width: 40%;
+        margin-top: 39px;
+
+        & fas {
+            color: white;
+
+        }
+
+        &:hover,
+        &:active {
+            .buttonWhite();
+        }
+    }
 }
 
 .perks {
     margin-left: 128px;
-   & p {
-       color: #b1b1b1;
-   }
 
-   
-   & h3,p,ul {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 40px;
-    margin: 22px;
-    color: #222;
-   } 
-  
-  & ul li {
-      list-style-image: url(../img/vector-list.svg);
-  } 
+    & p {
+        color: #b1b1b1;
+    }
+
+
+    & h3,
+    p,
+    ul {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 40px;
+        margin: 22px;
+        color: #222;
+    }
+
+    & ul li {
+        list-style-image: url(../img/vector-list.svg);
+    }
 }

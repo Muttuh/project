@@ -6,10 +6,12 @@
     padding-bottom: 128px;
     flex-grow: 1;
 }
+
 .cart-main-list {
     display: flex;
     flex-direction: column;
-   &-item {
+
+    &-item {
         width: 652px;
         min-height: 306px;
         font-size: 22px;
@@ -18,26 +20,28 @@
         box-shadow: 24px 24px 14px #e5e5e5;
 
         display: flex;
-        justify-content: space-between; 
-       
-       & img {
+        justify-content: space-between;
+
+        & img {
             height: 306px;
             object-fit: contain;
-       }
-       
-       & h3 {
+        }
+
+        & h3 {
             font-size: 24px;
             font-weight: 400;
             color: #222;
-       }
+        }
 
 
     }
+
     &-buttons {
         display: flex;
         justify-content: space-between;
         margin-top: 32px;
     }
+
     &-button {
         background-color: transparent;
         color: #000;
@@ -49,18 +53,21 @@
         font-weight: 300;
         font-family: 'Lato', sans-serif;
         cursor: pointer;
-        
+
         .flex(center);
-       &:hover,
-       &:active {
-        .buttonPink();
-        } 
+
+        &:hover,
+        &:active {
+            .buttonPink();
+        }
     }
 
 }
+
 .item-price {
     color: @pink;
 }
+
 .list-item-text {
     color: #6f6e6e;
 }
@@ -70,16 +77,18 @@
     font-size: 22px;
     font-weight: 400;
     color: #575757;
-   & h3 {
-    color: #222;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-   } 
-   & input {
-    width: 45px;
-    text-align: center;
-   }
+
+    & h3 {
+        color: #222;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    & input {
+        width: 45px;
+        text-align: center;
+    }
 }
 
 .cmli-delete {
@@ -94,6 +103,7 @@
     margin: 28px 24px;
 
 }
+
 .fa-times {
     font-size: 24px;
 }
@@ -101,7 +111,8 @@
 .cart-main-form {
     display: flex;
     flex-direction: column;
-   & input {
+
+    & input {
         margin-bottom: 20px;
         width: 360px;
         height: 45px;
@@ -109,8 +120,9 @@
 
         display: flex;
         align-items: center;
-    } 
-   & button {
+    }
+
+    & button {
         width: 100px;
         height: 35px;
         background-color: transparent;
@@ -121,11 +133,11 @@
         text-transform: uppercase;
         cursor: pointer;
 
-      &:hover,
-      &:active {
-        .buttonPink();
-    } 
-    } 
+        &:hover,
+        &:active {
+            .buttonPink();
+        }
+    }
 }
 
 .cart-main-form-submit {
@@ -138,31 +150,31 @@
     flex-direction: column;
     align-items: flex-end;
 
-   & h3 {
+    & h3 {
         font-size: 11px;
         color: #4a4a4a;
         margin: 0;
-   } 
+    }
 
-   & h4 {
+    & h4 {
         font-size: 16px;
         font-weight: 300;
         color: #222;
         margin: 12px 0 0;
     }
-   
+
     & h4 span {
         color: @pink;
         font-weight: bold;
-   }
-   
-   & hr {
+    }
+
+    & hr {
         width: 275px;
         color: #e2e2e2;
         margin: 21px 0 17px;
-   }
+    }
 
-   & input {
+    & input {
         width: 275px;
         padding: 15px 41px;
         margin: 0;
@@ -172,7 +184,7 @@
         border: none;
         font-family: 'Lato', sans-serif;
         cursor: pointer;
-        
+
         .flex(center);
         .buttonPink();
 
@@ -180,6 +192,6 @@
         &:active {
             .buttonWhite();
         }
-        
-   }
+
+    }
 }
