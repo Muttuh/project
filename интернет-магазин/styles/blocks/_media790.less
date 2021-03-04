@@ -1,4 +1,9 @@
 @media (max-width: 790px) {
+    body .wrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
     .header-wrapper {
         justify-content: space-between;
         &>div:first-child img {
@@ -9,9 +14,7 @@
     .header-wrapper>nav>a {
         display: none;
     }
-    .wrapper {
-        padding: 0 15px;
-      }
+    
     .index-main {
         background-image: none;
         background-color: #f1e4e6;
@@ -49,22 +52,149 @@
     
     .gallery-list {
         .flex(space-between, center);
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
         flex-direction: column;
     }
-    .subscribe {
+    .wrapper.subscribe {
         flex-direction: column;
         justify-content: space-between;
         padding-top: 65px;
-        padding-bottom: 140px;
+        padding-bottom: 110px;
 
     }
-    footer {
+    .wrapper.footer {
         flex-direction: column-reverse;
-        padding: 5px;
+        padding: 10px;
        &>div {
            margin-top: 40px;
        } 
     } 
+
+    // CATALOG
+    section.arrivals {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 24px;
+        padding-bottom: 45px;
+       & h2.arrival-header {
+           margin: 0;
+       } 
+    }
+
+
+    .catalog-main-menu {
+        min-height: 70px;
+    }
+    #filter {
+        display: none;
+    }
+    .nav-details summary {
+        font-size: 12px;
+    }
    
+    .product-slider img {
+        max-width: 80%;
+    }
+    .product-card {
+        width: 100%;
+        border: none;
+    }
+    .product-card-grey-line {
+        width: 45%;
+    }
+
+    // CART
+    #one-word {
+        justify-content: center;
+    }
+
+    .cart-main {
+        margin: 60px auto 128px;
+        flex-direction: column;
+        width: 95%;
+        
+        &-list {
+            display: flex;
+
+        }
+
+        &-list-item {
+            width: 100%;
+            min-height: 190px;
+
+            & img {
+                max-height: 190px;
+            }
+            
+            & .cmli-description {
+                font-size: 14px;
+                line-height: 16px;
+            }
+
+            & .cmli-description h3 {
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+
+        }
+        
+
+        &-list-buttons {
+            width: 100%;
+            margin: 32px auto 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-list-button {
+            min-height: 35px;
+            width: 40%;
+        }
+    }
+
+
+    .cart-main-form {
+        margin-top: 65px;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        
+        &-submit {
+            width: 100%;
+            margin-top: 65px;
+        }
+
+        &-submit hr {
+            width: 100%;
+        }
+
+        & input {
+            width: 100%;
+        }
+    }   
+    
+    // REGISTRATION
+    .registration {
+        padding-top: 36px;
+        padding-bottom: 56px;
+        flex-direction: column;
+        &-form {
+            width: 100%;
+        }
+        &-form input {
+            width: 100%;
+        }
+        &-radio {
+            align-self: flex-start;
+            margin: 10px 0 15px -15px;
+        }
+        & .perks {
+            margin-left: 0;
+        }
+        & .perks>* {
+            margin-left: 0;
+        }
+    }
+
 }

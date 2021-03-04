@@ -4,11 +4,14 @@
     min-height: 130px;
     text-transform: uppercase;
 
-    .flex(flex-start);
+    .flex();
+
+   &>div {
+       .flex();
+   } 
 }
 
 .catalog-filter {
-    padding-right: 322px;
     text-decoration: none;
     color: black;
 
@@ -69,6 +72,10 @@
     font-size: 14px;
     margin-right: 20px;
     cursor: pointer;
+
+   &:last-child {
+       margin-right: 0;
+   } 
 }
 
 .nav-details summary::after {

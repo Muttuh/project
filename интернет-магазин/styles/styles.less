@@ -40,9 +40,18 @@ body {
     padding: 0 calc(50% - 1140px / 2);
 }
 
+.hidden {
+    position: absolute;
+    left: -9999px;
+}
+
 .flex-grow {
     flex-grow: 1;
 }
+
+details summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+    display: none;
+  }
 
 /*HEADER*/
 @import "blocks/_header.less";

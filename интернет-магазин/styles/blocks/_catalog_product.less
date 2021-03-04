@@ -14,12 +14,16 @@
     .flex(center);
     border: none;
     cursor: pointer;
+    &:hover {
+        color: @pink;
+    }
 }
 
 /*PRODUCT CARD*/
 .product-card {
     border: 1px solid #eaeaea;
-    padding: 65px 292px;
+    padding-top: 65px;
+    padding-bottom: 65px;
     margin-top: -60px;
     background-color: #ffffff;
     z-index: 2;
@@ -44,7 +48,7 @@
 
 .product-card h3 {
     color: #4d4d4d;
-    text-transform: 18px;
+    font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;
     margin: 0;
@@ -56,6 +60,7 @@
     font-weight: 300;
     text-align: center;
     margin: 70px 0 55px;
+    max-width: 560px;
 }
 
 .product-price {
@@ -65,15 +70,17 @@
 }
 
 .product-card-grey-line {
-    width: 642px;
+    width: 83%;
     border-top: 1px solid #eaeaea;
     margin: 65px 0;
 }
 
-.product-cmm-nav {
+.cmm-nav{
+    text-decoration: none;
     font-size: 14px;
     text-transform: uppercase;
     color: #6f6e6e;
+    .flex();
 }
 
 .buy-button {
