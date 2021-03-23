@@ -1,0 +1,98 @@
+@pink: #F16D7F;
+
+.flex(@justify: space-between, @align: center) {
+    display: flex;
+    align-items: @align;
+    justify-content: @justify;
+}
+
+.buttonWhite {
+    cursor: pointer;
+    background-color: #fff;
+    color: @pink;
+    outline: 1px solid @pink;
+    border: none;
+    transition: 0.3s;
+}
+
+.buttonPink {
+    cursor: pointer;
+    background-color: @pink;
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    padding: 0 calc(50% - 1140px / 2);
+}
+
+.hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+details summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+    display: none;
+  }
+
+/*HEADER*/
+@import "blocks/_header.less";
+
+/*PROMO*/
+@import "blocks/_promo.less";
+
+/*OFFERS*/
+@import "blocks/_offers.less";
+
+/*GALLERY*/
+@import "blocks/_products.less";
+
+/*FEATURES*/
+@import "blocks/_features.less";
+
+/*SUBSCRIBE*/
+@import "blocks/_subscribe.less";
+
+/*FOOTER*/
+@import "blocks/_footer.less";
+
+/*ARRIVALS*/
+@import "blocks/_arrivals.less";
+
+/*CATALOG MAIN*/
+@import "blocks/_catalog_main.less";
+
+/*PRODUCT*/
+@import "blocks/_catalog_product.less";
+
+/*CART*/
+@import "blocks/_cart.less";
+
+/*REGISTRATION*/
+@import "blocks/_registration-main.less";
+
+/*@meida (max-width: 790)*/
+@import "blocks/_media790.less";
+
+/*@meida (max-width: 1180)*/
+@import "blocks/_media1180.less";
+
+

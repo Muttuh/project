@@ -1,0 +1,67 @@
+.offers-wrapper {
+    margin-top: 65px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+
+    .flex();
+    flex-wrap: wrap;
+}
+
+.offers-wrapper span {
+    color: @pink;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.offers-wrapper a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 30px;
+    min-width: 31%;
+    
+}
+
+.offers-wrapper>a>div {
+    height: 260px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .flex(center);
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.offers-wrapper>a:hover>div {
+    transform: scale(1.05);
+}
+
+.offers-wrapper>a:hover>div {
+    transform: scale(1.05);
+}
+
+.offers-wrapper>a:last-child:not(:nth-child(2n+1)),
+.offers-wrapper>a:nth-last-child(2):not(:nth-child(2n+1)) {
+    flex-grow: 1;
+
+}
+
+#forWomen {
+    background-image: url(../img/for-women.jpg);
+}
+
+#forMen {
+    background-image: url(../img/For-men.jpg);
+}
+
+#forKids {
+    background-image: url(../img/for-kids.jpg);
+}
+
+.offers-wrapper>a>#lower {
+    background-image: url(../img/accesories.jpg);
+    height: 180px;
+}

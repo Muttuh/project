@@ -1,0 +1,145 @@
+/*CATALOG MAIN-MENU*/
+.catalog-main-menu {
+    width: 100%;
+    min-height: 130px;
+    text-transform: uppercase;
+
+    .flex();
+
+   &>div {
+       .flex();
+   } 
+}
+
+.catalog-filter {
+    text-decoration: none;
+    color: black;
+
+    &[open] {
+        color: @pink;
+    }
+
+    & summary {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.filter-content {
+    position: absolute;
+    z-index: 5;
+    width: 360px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 13px 17px;
+
+    & ul {
+        padding: 0;
+    }
+
+    & li {
+        list-style-type: none;
+    }
+}
+
+.catalog-subfilter {
+    color: @pink;
+    text-transform: uppercase;
+    ;
+
+    & summary {
+        border-left: 3px solid @pink;
+        border-bottom: 1px solid #ebebeb;
+        padding: 11px 15px;
+        margin: 11px;
+        cursor: pointer;
+    }
+
+    & li {
+        color: #6f6e6e;
+        text-transform: capitalize;
+        margin: 11px 20px;
+        cursor: pointer;
+    }
+}
+
+.nav-details summary {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    color: #6f6e6e;
+    font-size: 14px;
+    margin-right: 20px;
+    cursor: pointer;
+
+   &:last-child {
+       margin-right: 0;
+   } 
+}
+
+.nav-details summary::after {
+    content: url("../img/vector-down.png");
+    margin-left: 10px;
+}
+
+.nav-details summary:hover,
+.nav-details summary[open] {
+    color: #EF5B70;
+    box-shadow: none;
+    border: none;
+}
+
+.size-content {
+    margin-top: 5px;
+    margin-left: -10px;
+    min-width: 80px;
+    min-height: 100px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 5;
+    padding: 7px 9px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+    & input {
+        color: #ebebeb;
+        border-color: #ebebeb;
+        margin: 9px;
+    }
+
+    & label {
+        color: #6f6e6e;
+        font-size: 14px;
+    }
+}
+
+
+/*CATALOG MAIN-PAGINATION*/
+.catalog-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalog-main-pagination {
+    width: 284px;
+    height: 45px;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cmp-a {
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 16px;
+    font-weight: 300;
+    margin-right: 15px;
+}
+
+.cmp-a-active,
+.cmp-a:hover {
+    color: @pink;
+}

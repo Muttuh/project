@@ -1,0 +1,49 @@
+.index-main {
+   background-image: linear-gradient(to right, #F4F2F3 50%, #f1e4e6 50%);
+   .flex(center);
+}
+
+.promoPhoto,
+.promoText {
+   width: 50%;
+}
+
+.promoPhoto {
+   background-image: url(../img/promoPhoto.jpg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: right;
+   height: 765px;
+}
+
+/*
+video {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   z-index: -1;
+}
+*/
+.promoText {
+   .flex(flex-start);
+   padding-left: 2%;
+}
+
+.promoText>div {
+   padding-left: 16px;
+   font-family: 'Lato', sans-serif;
+   color: #222;
+   text-transform: uppercase;
+   font-size: 32px;
+   font-weight: 700;
+   border-left: 12px solid @pink;
+}
+
+.brand {
+   font-size: 48px;
+   font-weight: 900;
+}
+
+.fashion {
+   color: @pink;
+}

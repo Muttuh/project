@@ -1,0 +1,126 @@
+.products {
+    .flex();
+    flex-direction: column;
+    margin-top: 65px;
+}
+
+.products h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.products p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #9f9f9f;
+    margin-bottom: 50px;
+}
+
+.gallery-list {
+    .flex(space-between, flex-start);
+    flex-wrap: wrap;
+}
+
+.products .button {
+    width: 210px;
+    height: 50px;
+    .buttonWhite();
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 50px;
+    .flex(center);
+
+    &:hover,
+    &:active {
+        .buttonPink();
+    }
+}
+
+.gallery {
+    background-color: #f8f8f8;
+    .flex(space-between, flex-start);
+    flex-direction: column;
+    width: 360px;
+    margin-bottom: 30px;
+}
+
+.gallery-picture {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.gallery-text {
+    padding: 20px 25px 16px;
+}
+
+.gallery-text h3 {
+    font-size: 13px;
+    margin: 0;
+}
+
+.gallery-text p:first-of-type {
+    font-size: 14px;
+    color: #5d5d5d;
+    font-weight: 300;
+    margin: 12px 0 18px;
+}
+
+.gallery-text p:last-of-type {
+    font-size: 16px;
+    color: #F26376;
+    margin-bottom: 0;
+}
+
+.back {
+    opacity: 0;
+    box-sizing: border-box;
+    background-color: #3a3838;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.back div {
+    width: 140px;
+    height: 45px;
+    border: 1px solid white;
+    .flex(center);
+    z-index: 1;
+    padding: 0;
+}
+
+.back a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: transform 0.3s;
+    opacity: 0;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.back span {
+    margin-left: 14px;
+}
+
+.gallery-picture:hover>.back {
+    .flex(center);
+    flex-direction: column;
+    opacity: 0.85;
+}
+
+.gallery-picture:hover>.back a {
+    opacity: 1;
+}

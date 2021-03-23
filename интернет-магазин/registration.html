@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Registration</title>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/39d625aba6.js" crossorigin="anonymous"></script>
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="wrapper header-wrapper">
+			<div>
+				<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+				<img src="img/search.png" alt="search">
+			</div>
+			<nav>
+				<img src="img/header-menu.png" alt="header-menu" class="burgerBtn">
+				<a href="registration.html"><img src="img/account.png" alt="account"></a>
+				<a href="cart.html"><img src="img/cart.png" alt="cart"></a>
+			</nav>
+		</div>
+
+		<div class="overlay">
+			<div class="burger-menu">
+				<button class="burger-close">
+					<i class="fas fa-times"></i>
+				</button>
+				<h3>
+					menu
+				</h3>
+				<span>man</span>
+				<ul class="bureger-menu-list">
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Bags</a></li>
+					<li><a href="#">Denim</a></li>
+					<li><a href="#">T-Shirts</a></li>
+				</ul>
+				<span>women</span>
+				<ul class="bureger-menu-list"> 
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Jackets & Coats</a></li>
+					<li><a href="#">Polos</a></li>
+					<li><a href="#">T-Shirts</a></li>
+					<li><a href="#">Shirts</a></li>
+				</ul>
+				<span>kids</span>
+				<ul class="bureger-menu-list"> 
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Bags</a></li>
+					<li><a href="#">Denim</a></li>
+					<li><a href="#">T-Shirts</a></li>
+					<li><a href="#">Bags</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<section class="wrapper arrivals" id="one-word">
+		<h2 class="arrival-header">
+			registration
+		</h2>
+	</section>
+
+	<main class="flex-grow wrapper registration">
+		<form action="#" class="registration-form">
+			<h3>your name</h3>
+			<input type="text" placeholder="first name">
+			<input type="text" placeholder="last name">
+
+			<div class="registration-radio">
+				<input type="radio" name="gender" value="male">
+				<div>Male</div>
+				<input type="radio" name="gender" value="female">
+				<div>Female</div>
+			</div>
+
+			<h3>login details</h3>
+			<input type="email" placeholder="email">
+			<input type="password" placeholder="password">
+			<p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+			</p>
+			<button formaction="#" class="form-submit"><span>join now</span><i
+					class="fas fa-arrow-right"></i></button>
+		</form>
+
+		<div class="perks">
+			<h3>LOYALTY HAS ITS PERKS</h3>
+			<p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as
+				soon as you join:</p>
+			<ul>
+				<li>15% off welcome offer</li>
+				<li>Free shipping, returns and exchanges on all orders</li>
+				<li>$10 off a purchase on your birthday</li>
+				<li>Early access to products</li>
+				<li>Exclusive offers & rewards</li>
+			</ul>
+		</div>
+
+	</main>
+
+	<section class="wrapper subscribe">
+		<h2 class="hidden">SUbscribe to receive best Shop news</h2>
+		<div class="subscribe-quote">
+			<div><img src="img/Intersect.png" alt="img/Intersect.png"></div>
+			<p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus condimentum</span>“</p>
+		</div>
+		<div class="subscribe-form">
+			<p><span>subscribe</span><br> for our newletter and promotion</p>
+			<form action="#">
+				<input type="email" placeholder="Enter Your Email" id="email">
+				<input type="submit" class="send-submit" value="Subscribe" name="send" id="subscribe">
+			</form>
+		</div>
+	</section>
+
+	<footer class="wrapper footer">
+		<div class="rights">© 2021 Brand All Rights Reserved.</div>
+		<div class="socials">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-pinterest-p"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+		</div>
+	</footer>
+</body>
+
+</html>

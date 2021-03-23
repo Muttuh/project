@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Catalog</title>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/39d625aba6.js" crossorigin="anonymous"></script>
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="wrapper header-wrapper">
+			<div>
+				<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+				<img src="img/search.png" alt="search">
+			</div>
+			<nav>
+				<img src="img/header-menu.png" alt="header-menu" class="burgerBtn">
+				<a href="registration.html"><img src="img/account.png" alt="account"></a>
+				<a href="cart.html"><img src="img/cart.png" alt="cart"></a>
+			</nav>
+		</div>
+
+		<div class="overlay">
+			<div class="burger-menu">
+				<button class="burger-close">
+					<i class="fas fa-times"></i>
+				</button>
+				<h3>
+					menu
+				</h3>
+				<span>man</span>
+				<ul class="bureger-menu-list">
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Bags</a></li>
+					<li><a href="#">Denim</a></li>
+					<li><a href="#">T-Shirts</a></li>
+				</ul>
+				<span>women</span>
+				<ul class="bureger-menu-list"> 
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Jackets & Coats</a></li>
+					<li><a href="#">Polos</a></li>
+					<li><a href="#">T-Shirts</a></li>
+					<li><a href="#">Shirts</a></li>
+				</ul>
+				<span>kids</span>
+				<ul class="bureger-menu-list"> 
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Bags</a></li>
+					<li><a href="#">Denim</a></li>
+					<li><a href="#">T-Shirts</a></li>
+					<li><a href="#">Bags</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<section class="wrapper arrivals">
+		<h2 class="arrival-header">
+			new arrivals
+		</h2>
+		<nav class="arrivals-nav">
+			<a href="#">home</a>
+			<a href="#">men</a>
+			<a class="arrivals-active" href="#">new arrivals</a>
+		</nav>
+	</section>
+
+	<main class="wrapper catalog-main">
+		<div class="catalog-main-menu">
+			<details class="catalog-filter">
+				<summary><span id="filter">filter</span> <i class="fas fa-sort-amount-up"></i></summary>
+				<div class="filter-content">
+					<ul>
+						<li>
+							<details class="catalog-subfilter">
+								<summary>category</summary>
+								<ul>
+									<li>Accessories</li>
+									<li>Bags</li>
+									<li>Denim</li>
+									<li>Hoodies & Sweatshirts</li>
+									<li>Jackets & Coats</li>
+									<li>Polos</li>
+									<li>Shirts</li>
+									<li>Shoes</li>
+									<li>Sweaters & Knits</li>
+									<li>T-Shirts</li>
+									<li>Tanks</li>
+								</ul>
+							</details>
+						</li>
+						<li>
+
+							<details class="catalog-subfilter">
+								<summary>brand</summary>
+								<ul>
+									<li>Accessories</li>
+									<li>Bags</li>
+									<li>Denim</li>
+									<li>Hoodies & Sweatshirts</li>
+									<li>Jackets & Coats</li>
+									<li>Polos</li>
+									<li>Shirts</li>
+									<li>Shoes</li>
+									<li>Sweaters & Knits</li>
+									<li>T-Shirts</li>
+									<li>Tanks</li>
+								</ul>
+							</details>
+
+						</li>
+						<li>
+
+							<details class="catalog-subfilter">
+								<summary>designer</summary>
+								<ul>
+									<li>Accessories</li>
+									<li>Bags</li>
+									<li>Denim</li>
+									<li>Hoodies & Sweatshirts</li>
+									<li>Jackets & Coats</li>
+									<li>Polos</li>
+									<li>Shirts</li>
+									<li>Shoes</li>
+									<li>Sweaters & Knits</li>
+									<li>T-Shirts</li>
+									<li>Tanks</li>
+								</ul>
+							</details>
+
+						</li>
+					</ul>
+				</div>
+			</details>
+
+			<div>
+			<details class="nav-details">
+				<summary>trending now</summary>
+				<div class="size-content">
+
+				</div>
+			</details>
+			<details class="nav-details">
+				<summary>size</summary>
+				<div class="size-content">
+					<input type="checkbox" id="xs"><label for="xs">xs</label><br>
+					<input type="checkbox" id="s"><label for="s">s</label><br>
+					<input type="checkbox" id="m"><label for="m">m</label><br>
+					<input type="checkbox" id="l"><label for="l">l</label><br>
+					<input type="checkbox" id="xl"><label for="xl">xl</label>
+				</div>
+			</details>
+			<details class="nav-details">
+				<summary>price</summary>
+				<div class="size-content">
+				</div>
+			</details>
+			</div>
+		</div>
+		<section class="gallery-list">
+			<div class="gallery">
+				<div class="gallery-picture">
+					<img src="img/men-catalog/1.jpg" alt="img/men-catalog/1.jpg">
+					<div class="back">
+						<a href="#">
+							<div>
+								<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
+								<span>Add to Cart</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="gallery-text">
+					<h3>ELLERY X M'O CAPSULE</h3>
+					<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+						teams up with Moda Operandi.</p>
+					<p>$52.00</p>
+				</div>
+			</div>
+			<div class="gallery">
+				<div class="gallery-picture">
+					<img src="img/men-catalog/2.jpg" alt="img/men-catalog/2.jpg">
+					<div class="back">
+						<a href="#">
+							<div>
+								<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
+								<span>Add to Cart</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="gallery-text">
+					<h3>ELLERY X M'O CAPSULE</h3>
+					<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+						teams up with Moda Operandi.</p>
+					<p>$52.00</p>
+				</div>
+			</div>
+			<div class="gallery">
+				<div class="gallery-picture">
+					<img src="img/men-catalog/3.jpg" alt="img/men-catalog/3.jpg">
+					<div class="back">
+						<a href="#">
+							<div>
+								<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
+								<span>Add to Cart</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="gallery-text">
+					<h3>ELLERY X M'O CAPSULE</h3>
+					<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+						teams up with Moda Operandi.</p>
+					<p>$52.00</p>
+				</div>
+			</div>
+			<div class="gallery">
+				<div class="gallery-picture">
+					<img src="img/men-catalog/4.jpg" alt="img/men-catalog/4.jpg">
+					<div class="back">
+						<a href="#">
+							<div>
+								<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
+								<span>Add to Cart</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="gallery-text">
+					<h3>ELLERY X M'O CAPSULE</h3>
+					<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+						teams up with Moda Operandi.</p>
+					<p>$52.00</p>
+				</div>
+			</div>
+			<div class="gallery">
+				<div class="gallery-picture">
+					<img src="img/men-catalog/5.jpg" alt="img/men-catalog/5.jpg">
+					<div class="back">
+						<a href="#">
+							<div>
+								<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
+								<span>Add to Cart</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="gallery-text">
+					<h3>ELLERY X M'O CAPSULE</h3>
+					<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+						teams up with Moda Operandi.</p>
+					<p>$52.00</p>
+				</div>
+			</div>
+			<div class="gallery">
+				<div class="gallery-picture">
+					<img src="img/men-catalog/6.jpg" alt="img/men-catalog/6.jpg">
+					<div class="back">
+						<a href="#">
+							<div>
+								<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
+								<span>Add to Cart</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="gallery-text">
+					<h3>ELLERY X M'O CAPSULE</h3>
+					<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+						teams up with Moda Operandi.</p>
+					<p>$52.00</p>
+				</div>
+			</div>
+			<div class="gallery">
+				<div class="gallery-picture">
+					<img src="img/men-catalog/7.jpg" alt="img/men-catalog/7.jpg">
+					<div class="back">
+						<a href="#">
+							<div>
+								<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
+								<span>Add to Cart</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="gallery-text">
+					<h3>ELLERY X M'O CAPSULE</h3>
+					<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+						teams up with Moda Operandi.</p>
+					<p>$52.00</p>
+				</div>
+			</div>
+			<div class="gallery">
+				<div class="gallery-picture">
+					<img src="img/men-catalog/8.jpg" alt="img/men-catalog/8.jpg">
+					<div class="back">
+						<a href="#">
+							<div>
+								<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
+								<span>Add to Cart</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="gallery-text">
+					<h3>ELLERY X M'O CAPSULE</h3>
+					<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+						teams up with Moda Operandi.</p>
+					<p>$52.00</p>
+				</div>
+			</div>
+			<div class="gallery">
+				<div class="gallery-picture">
+					<img src="img/men-catalog/9.jpg" alt="img/men-catalog/9.jpg">
+					<div class="back">
+						<a href="#">
+							<div>
+								<img src="img/add-to-cart.png" alt="img/add-to-cart.png">
+								<span>Add to Cart</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="gallery-text">
+					<h3>ELLERY X M'O CAPSULE</h3>
+					<p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+						teams up with Moda Operandi.</p>
+					<p>$52.00</p>
+				</div>
+			</div>
+		</section>
+		<div class="catalog-main-pagination">
+			<a href="#" class="cmp-a"><img src="img/vector-left.png" alt="<"></a>
+			<a href="#" class="cmp-a cmp-a-active">1</a>
+			<a href="#" class="cmp-a">2</a>
+			<a href="#" class="cmp-a">3</a>
+			<a href="#" class="cmp-a">4</a>
+			<a href="#" class="cmp-a">5</a>
+			<a href="#" class="cmp-a">6</a>
+			<a href="#" class="cmp-a">...</a>
+			<a href="#" class="cmp-a">10</a>
+			<a href="#" class="cmp-a"><img src="img/vector-right.png" alt=">"></a>
+		</div>
+	</main>
+
+	<section class="wrapper features">
+		<div class="feature">
+			<img src="img/feature1.png" alt="img/feature1.png">
+			<h4>Free Delivery</h4>
+			<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+		</div>
+		<div class="feature">
+			<img src="img/feature2.png" alt="img/feature2.png">
+			<h4>Sales & discounts</h4>
+			<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+		</div>
+		<div class="feature">
+			<img src="img/feature3.png" alt="img/feature3.png">
+			<h4>Quality assurance</h4>
+			<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+		</div>
+	</section>
+	<section class="wrapper subscribe">
+		<h2 class="hidden">SUbscribe to receive best Shop news</h2>
+		<div class="subscribe-quote">
+			<div><img src="img/Intersect.png" alt="img/Intersect.png"></div>
+			<p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus condimentum</span>“</p>
+		</div>
+		<div class="subscribe-form">
+			<p><span>subscribe</span><br> for our newletter and promotion</p>
+			<form action="#">
+				<input type="email" placeholder="Enter Your Email" id="email">
+				<input type="submit" class="send-submit" value="Subscribe" name="send" id="subscribe">
+			</form>
+		</div>
+	</section>
+
+	<footer class="wrapper footer">
+		<div class="rights">© 2021 Brand All Rights Reserved.</div>
+		<div class="socials">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-pinterest-p"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+		</div>
+	</footer>
+
+</body>
+</html>
